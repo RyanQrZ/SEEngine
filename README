@@ -1,0 +1,26 @@
+importante ter em mente que esser projeto estś em fase de desenvolvimento.
+
+Por conta disso há vários poréns para conseguir rodar o código sem problemas.
+
+I) No estágio atual não usei nenhum framework para mapear o banco de dados. Portanto você tera que instalar e configurar algum SGBD manualmente na sua máquina.
+
+** PS: Usei o mariadb, se você for usar outro SGBD tera que mudar a string de conexão na classe ConnectionFactory.
+
+** PS: Deixei um arquivo .sql para servir de exemplo da tabela que eu criei dentro do BD
+
+**OBJETIVO: Consertar usando Hibernate
+
+II) Não foi usado nenhum gerenciador de dependências, então você tera que instalar o driver do banco de dados e o container. 
+
+** PS: Driver do bando de dados e SGBD são coisas diferentes.
+
+** PS: Eu usei o tomcat 2.7 com JDK 17, recomendo essa configuração pois tive problemas na hora de criar as servlets.
+
+III) Pode ser que voce tenha problema para inserir o usuario no banco. Tente colocar o driver na past "lib" do projeto. Se nao funcionar coloque na pasta "lib" do tomcat. 
+
+REFERENCIAS: 
+
+https://mariadb.com/kb/en/about-mariadb-connector-j/
+
+https://tomcat.apache.org/
+
